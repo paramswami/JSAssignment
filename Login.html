@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color: white;">
+
+
+    
+  <ul style="height: 47px;">
+    <li><h3 style="color: white;margin-left: 27px;margin-top: 12px">Website Name</h3></li>
+    <li style="float: right;"><a href="Login.html">Login</a></li>
+    <li style="float: right;"><a href="Registration.html">Registration</a></li>
+    <li style="float: right;"><a href="Home.html">Home</a></li>
+   
+  </ul>
+
+  <div class="container" style="margin-left: 23%;">
+    <h1>Login Here</h1>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" onkeyup="clearLoginFun()" required 
+    style="width: 35%;margin-left: 44px;">
+     &nbsp;<span style="color: red;" id="sploginEmail"></span>
+     <br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="password" onkeyup="clearLoginFun()" required
+    style="width: 35%;margin-left: 14px;"> 
+    &nbsp;<span style="color: red;" id="spPassword"></span>
+     <br>
+
+    <hr>
+    
+    <button type="submit" class="registerbtn" style="width: 98px" onclick="loginFunc()" >Login</button>
+
+
+  </div>
+
+       
+</body>
+
+<script src='index.js'></script>
+</html>

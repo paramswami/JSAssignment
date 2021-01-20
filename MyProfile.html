@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color: white;" onload="GetProfile()">
+
+
+  <ul style="height: 47px;">
+    <li><h3 style="color: white;margin-left: 27px;margin-top: 12px">Website Name</h3></li>
+    <li style="float: right;"><a href="#" onclick="logout()">Logout</a></li>
+    <li style="float: right;"><a href="MyProfile.html">My Profile</a></li>
+    <li style="float: right;"><a href="Dashboard.html">Dashboard</a></li>
+   
+  </ul>
+
+  <div class="container" style="margin-left: 23%;">
+    <h2>Update Profile</h2>
+    <hr>
+
+    <div>
+      <img id="myImgProfile" src="#" alt="your image" height=200 width=150 style="margin-left: 77%;position: relative;;" >
+    </div>
+
+    <div id="divProfile" style="margin-top: -35px;">
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" readonly
+    style="width: 50%;margin-left: 44px;">  <br>
+
+    <label for="fName"><b>First Name</b></label>
+    <input type="text" placeholder="First Name" name="fName" id="fName"
+    style="width: 50%;margin-left: 14px;">  <br>
+
+    <label for="lName"><b>Last Name</b></label>
+    <input type="text" placeholder="Last Name" name="lName" id="lName"
+    style="width: 50%;margin-left: 14px;">  <br>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Address" name="address" id="address"
+    style="width: 50%;margin-left: 34px;">  <br>
+
+    <label for="gender"><b>Gender</b></label>
+    <label for="male" style="margin-left: 34px;" >Male</label> <input type="radio" name="gender" id="rbMale" value="male"> 
+
+    <label for="male">Female</label> <input type="radio" id="rbfemale" name="gender" value="female">
+
+    <hr>
+    
+    <button type="submit" class="registerbtn" style="width: 98px" onclick="UpdateProfile()" >Update</button>
+
+  </div>
+  </div>
+
+</body>
+<script src='index.js'></script>
+</html>
